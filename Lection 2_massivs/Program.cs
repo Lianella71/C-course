@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Ищем максимум из 9 чисел
+// 1. Стихийный метод
+
+int 
