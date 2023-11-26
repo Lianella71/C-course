@@ -125,7 +125,7 @@ while (index < n)
     index ++;
 }
 */
-
+/*
 //Зададим массив, укажем что там по умолчанию 10 элементов. 
 
 void FillArray(int [] collection)
@@ -152,7 +152,22 @@ void PrintArray(int [] col) // Метод выводит на печать
     }
 }
 
+int IndexOf(int[] collection, int find) // Третий метод с возвращением данных.
+{
+    int count = collection.Length; // определяем количество элементов массива
+    int index = 0;
+    int position = 0;
+    while(index < count)
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+        }
+        index++;
+    }
+    return position;
 
+}
 int[] array = new int [10]; 
 // Дословно - создай новый массив в котором 10 элементов. По умолчанию он будет наполнен нулями.
 // Для того что бы его наполнить воспользуемся методом выше. 
@@ -161,3 +176,9 @@ int[] array = new int [10];
 // Тестируем методы: 
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
+
+int pos = IndexOf(array, 4);
+Console.WriteLine(pos);
+*/
+
