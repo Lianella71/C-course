@@ -125,3 +125,39 @@ while (index < n)
     index ++;
 }
 */
+
+//Зададим массив, укажем что там по умолчанию 10 элементов. 
+
+void FillArray(int [] collection)
+{
+    int length = collection.Length; // Получение длины нашего массива
+    int index = 0; // Задаем первичное значение индекса
+    // Задаем условия в цикле While. Пока действует условия делаем тело цикла
+    while (index < length)
+    {
+        collection[index] = new Random().Next(1, 10); // В позицию положить новое случайное число из диапазона (1, 10)
+        // index = index + 1;
+        index++;
+    }
+}
+
+void PrintArray(int [] col) // Метод выводит на печать
+{
+    int count = col.Length; // вывод массива
+    int position = 0;  // изменилось имя вместо index
+    while(position < count)
+    {
+        Console.WriteLine(col[position]);
+        position++;
+    }
+}
+
+
+int[] array = new int [10]; 
+// Дословно - создай новый массив в котором 10 элементов. По умолчанию он будет наполнен нулями.
+// Для того что бы его наполнить воспользуемся методом выше. 
+// Метод Void использует когда не нужно возвращать данные. Одновременно с ним не используется return!!
+
+// Тестируем методы: 
+FillArray(array);
+PrintArray(array);
