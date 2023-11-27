@@ -68,22 +68,24 @@
 //     }
 // }
 
+/* Внутри класса Answer напишите метод CheckIfEven, 
+который на вход принимает число number и выводит, является 
+ли число чётным (делится ли оно на два без остатка).
+
 using System;
 
 class Answer {
     static void CheckIfEven(int number)
     {
-        if(number % 2 == 0);
+        if (number % 2 == 0)
         {
-            Console.WriteLine("Число четное");
+            Console.WriteLine("четное");
         }
         else
         {
-            Console.WriteLine("Число нечетное");
-        }   
-
+            Console.WriteLine("нечетное");  
+        }     
     }
-  
 
   // Не удаляйте и не меняйте метод Main! 
     static public void Main(string[] args) {
@@ -93,10 +95,11 @@ class Answer {
             number = int.Parse(args[0]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 6;
+            number = 3;
         }
 
         // Не удаляйте строки ниже
         CheckIfEven(number);
     }
 }
+*/
