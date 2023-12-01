@@ -60,4 +60,14 @@ if ((x > 0) && (y > 0))
 цифру числа.
 */
 Console.Clear();
-int [] array = new Random().Next [10,99];
+int a = new Random().Next (10,99);
+	Console.WriteLine(`{a}`);
+	int a1 = (a / 10);
+	int a2 = (a % 10);
+if (a1 > a2)
+	{
+		Console.Writeline(%"Наибольшее число `a1`");
+	}
+else Console.Writeline(%"Наибольшее число `a1`");
+
+Console.ReadKey();
