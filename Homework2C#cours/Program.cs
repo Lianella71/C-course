@@ -59,15 +59,34 @@ if ((x > 0) && (y > 0))
 число из отрезка [10, 99] и показывает наибольшую
 цифру числа.
 */
+/*
 Console.Clear();
-int a = new Random().Next (10,99);
-	Console.WriteLine(`{a}`);
-	int a1 = (a / 10);
-	int a2 = (a % 10);
-if (a1 > a2)
-	{
-		Console.Writeline(%"Наибольшее число `a1`");
-	}
-else Console.Writeline(%"Наибольшее число `a1`");
+int max = 0;
+int a = new Random().Next (10, 99);
+Console.WriteLine("Random = " + a);
+while (a > 0)
+
+{
+    if (max < a % 10) max = a % 10;
+        a /= 10;
+}
+Console.WriteLine(max);
 
 Console.ReadKey();
+*/
+// Задача №4
+/* Напишите программу, которая на вход принимает 
+натуральное число N, а на выходе показывает его
+цифры через запятую.
+*/
+Console.Clear();
+Console.WriteLine("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+string str = N.ToString();
+int[] a = new int[str.Length];
+for( int i=0; i< str.Length; i++)
+{
+    a[i] = int.Parse(str[i].ToString());
+
+}
+Console.WriteLine(string.Join(", ", a)); 
