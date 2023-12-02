@@ -6,9 +6,16 @@
 */
 
 Console.Clear();
-Console.Write("Введите целое число: ");
-int x = Convert.ToInt32(Console.ReadLine());
-static void Main(string[] args)
-{
+int i = 0;
+bool q = false;
+for (;;)
+ {
+    if (i>0)
+    i++;
+    Console.Write("Введите целое число: ");
+
+    if (i % 2 == 0) break;
     
 }
+return 0;
+
