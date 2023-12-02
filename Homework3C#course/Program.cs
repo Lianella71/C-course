@@ -5,22 +5,22 @@
 
 Console.Clear();
 
-int n = 10; // вводим размер массива
-int[] mas = new int[n]; //создаем массив
+int n = 10; 
+int[] mas = new int[n]; 
             
 Random r = new Random();
 for (int i = 0; i < n; i++)
     {
-        mas[i] = r.Next(1, 100);  //заполняем массив числами от 1 до 100
-        Console.Write($"{mas[i]} "); // выводим массив на экран для контроля
+        mas[i] = r.Next(1, 100);  
+        Console.Write($"{mas[i]} "); 
     }
 Console.WriteLine();
  
-int A = 20;  // вводим с клавиатуры  A
-int B = 90; // вводим с клавиатуры В
-int count = 0; //создаем счетчик
+int A = 20;  
+int B = 90; 
+int count = 0;
  
 for (int i = 0; i < n; i++) 
-    if ((mas[i] >= A) && (mas[i] <= B)) count++;  // считаем кол-во элементов mas[i] в диапазоне
-    Console.WriteLine("Количество элементов лежащих в отрезке [20,90] - " + count); //выводим на экран
+    if ((mas[i] >= A) && (mas[i] <= B)) count++;
+    Console.WriteLine("Количество элементов лежащих в отрезке [20,90] - " + count);
     
