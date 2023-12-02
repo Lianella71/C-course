@@ -55,28 +55,27 @@ Console.WriteLine(count);
 /* Задайте массив из вещественных чисел с ненулевой дробной частью.
  Найдите разницу между максимальным и минимальным элементов массива.
  */
-
+/*
 Console.Clear();
 Console.Write("Введите количество элементов массива: ");
-int a = Convert.ToInt32(Console.ReadLine());
-double[] randomArray = new double[a];
+int x = Convert.ToInt32(Console.ReadLine());
+double[] mas = new double[x];
+Random r = new Random();
 
-// double min = double.MaxValue;
-// double max = double.MinValue;
-for (int i = 0; i < a; i++)
+for (int i = 0; i < x; i++)
 {
-    a[i] = new Random().Next(1, 100);  
-    Console.WriteLine(string.Join(", ", a));
+    mas[i] = r.Next(1, 10) + Math.Round(r.NextDouble(), 0);
+    Console.Write($"{mas[i]} ");
 }
-
- 
-            
-
-
-
-/*
-Console.WriteLine("Разница между макс и мин: {0}", max - min);
- 
-Console.ReadKey();
+double min = mas[0];
+double max = mas[0];
+for (int i = 0; i < x; i++)
+{
+    if (min > mas[i]) min = mas[i];
+    if (max < mas[i]) max = mas[i];
+}
+Console.WriteLine($"\n Минимальный элемент: {min}\n Максимальный элемент: {max}");
+Console.Write($"\nРазница между максимальным и минимальным элементов массива: {(max - min):F2}");
 */
+
 
