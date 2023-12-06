@@ -93,3 +93,139 @@ double firstValue, secondValue;  // Введем две переменные п�
         Console.WriteLine("Ошибка! Неизвестное действие");
     }
 */
+
+// Сумма и количество четных и нечетных чисел в указанном диапазоне
+/*
+
+Console.Clear();
+uint oddNumbersCount = 0; //Счетчик под нечетные числа odd - переводится как нечетное
+uint evenNumbersCount = 0; // Счетчик под четные  even - переводится как четное
+
+int oddNumbersSum = 0;
+int evenNumbersSum = 0;
+
+Console.WriteLine("Введите первое число диапазона");
+int currentValue = int.Parse(Console.ReadLine()); // начало нашего диапазона
+Console.WriteLine("Введите последнее число диапазона");
+int limit = int.Parse(Console.ReadLine()); // конец диапазона
+
+while (currentValue <= limit)
+{
+    if (currentValue % 2 == 0)
+    {
+        
+        evenNumbersCount++;
+        evenNumbersSum = evenNumbersSum + currentValue; 
+    }
+    else
+    {
+        oddNumbersSum = oddNumbersSum + currentValue;
+        oddNumbersCount++;
+    }
+    currentValue++;
+}
+
+Console.WriteLine("Количество нечетных чисел: " + oddNumbersCount);
+Console.WriteLine("Количество четных чисел: " + evenNumbersCount);
+Console.WriteLine("Сумма нечетных чисел: " + oddNumbersSum);
+Console.WriteLine("Сумма четных чисел: " + evenNumbersSum);
+Console.ReadLine();
+*/
+
+// ВЛОЖЕННЫЕ ЦИКЛЫ
+// Рисуем прямоугольник/квадрат
+/*
+Console.Clear();
+Console.Write("Введите высоту прямоугольника: ");
+int height = int.Parse(Console.ReadLine());
+
+Console.Write("Введите ширину прямоугольника: ");
+int width = int.Parse(Console.ReadLine());
+
+for (int j = 0; j < height; j++)
+{
+    
+    for (int i = 0; i < width; i++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+Console.ReadLine();
+*/
+
+// РИСУЕМ ТРЕУГОЛЬНИКИ В КОНСОЛИ
+
+/* 
+*
+**
+***
+****
+*****
+
+Console.Clear();
+Console.Write("Введите высоту треугольника: ");
+int height = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < height; i++)
+{
+    for (int j = 0; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+Console.ReadLine();
+*/
+
+/* 
+*****
+****
+***
+**
+*
+
+
+Console.Clear();
+Console.Write("Введите высоту треугольника: ");
+int height = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < height; i++)
+{
+    for (int j = height; j > i; j--)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+Console.ReadLine();
+*/
+
+/*
+        *
+       **
+      ***
+     ****
+    *****
+
+Console.Clear();
+Console.Write("Введите высоту треугольника: ");
+int height = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < height; i++)
+{
+    for (int j = height; j > i; j--)
+    {
+        Console.Write(" ");
+    }
+    for (int j = 0; j <= i; j++)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+Console.ReadLine();
+*/
