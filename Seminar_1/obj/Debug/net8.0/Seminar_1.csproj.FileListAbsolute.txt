@@ -12,3 +12,4 @@ C:\Users\User\Desktop\C#course\Seminar_1\obj\Debug\net8.0\refint\Seminar_1.dll
 C:\Users\User\Desktop\C#course\Seminar_1\obj\Debug\net8.0\Seminar_1.pdb
 C:\Users\User\Desktop\C#course\Seminar_1\obj\Debug\net8.0\Seminar_1.genruntimeconfig.cache
 C:\Users\User\Desktop\C#course\Seminar_1\obj\Debug\net8.0\ref\Seminar_1.dll
+C:\Users\User\Desktop\C#course\Seminar_1\obj\Debug\net8.0\Seminar_1.sourcelink.json
