@@ -62,21 +62,23 @@ internal class Program
 Задайте произвольный массив. Выведете его элементы, начиная с конца. 
 Использовать рекурсию, не использовать циклы.
 */
+/*
 internal class Program
 {
     private static void Main(string[] args)
     {
         Console.Clear();
-        int[] randA = {2, 4, 8, 9, 0, 15};  // Сздала массив 
+        int[] randA = {2, 4, 8, 9, 0, 15}; 
         PrintArray(randA);
 
-        static void PrintArray (int [] randA, int i = 0)
+        static void PrintArray (int [] randA, int i = 5)
         {
-            if (i < randA.Length)
+            if (i >= 0)
             {
                 Console.Write(randA[i] + " ");
-                PrintArray(randA, i + 1);
+                PrintArray(randA, i - 1);
             }
         }
     }
 }
+*/
